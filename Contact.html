@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Josh DeCuir's Portfolio</title>
+    <link rel="shortcut icon" href="Images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="CSS/style.production.css">
+    <header class="page-header">
+        <img src="Images/caffeine.png" class="page-logo" alt="Coding Image" height="100px" width="200px">
+        <div class="menubar" style="float: right;">
+            <a href="index.html"><button class="button-menubar">Home</button></a> 
+            <a href="About.html"><button class="button-menubar">About</button></a>
+            <a href="Contact.html"><button class="button-menubar">Contact</button></a>
+            <a href="Work.html"><button class="button-menubar">Work</button></a>
+        </div>
+    </header>
+</head>
+<body>
+    <main>
+        <h1>
+            Josh DeCuir
+        </h1>
+        <h3>
+            <a href="mailto:joshmdecuir@gmail.com">E-mail : Joshmdecuir@gmail.com</a><br>
+            <a href="tel:2815431207">Phone: 281-543-1207</a><br>
+            <a href="skype:joshmdecuir@gmail.com">Skype</a><br>
+            <a href="mailto:joshmdecuir@gmail.com">Contact Me!</a>
+        </h3>
+        <table>
+            <tr>
+                <th><label class="standard-label" for="contact-email">E-mail: </label></th>
+                <th><input type="email" id="contact-email" required="required"></th>
+            </tr>
+            <tr>
+                <th><label class="standard-label">Telephone: </label></th>
+                <th><input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}[\-]" required></th>
+            </tr>
+            <tr>
+                <th><label class="standard-label">Message:</label></th>
+                <th><textarea maxlength="240" required></textarea></th>
+            </tr>
+            <tr>
+                <th><input type="submit" value="Send message"></th>
+            </tr>
+        </table>
+        <h4 class="center-container">
+            <a href>Check out some of my code</a>
+        </h4>
+    </main>
+    <footer class="page-footer">
+        <h4>
+            Find me on:
+        </h4>
+        <div>
+            <a href="https://github.com/JoshDeCuir" target="_blank">
+                <img src="Images/github-mark.svg" alt="GitHub" height="50px" width="50px">
+            </a>
+            <a href="https://linkedin.com/in/josh-decuir" target="_blank">
+                <img src="Images/linkedin.svg" alt="LinkedIn" height="50px" width="50px">
+            </a>
+        </div>
+    </footer>
+    <script src="JS/tota11y.min.js"></script>
+</body>
+</html>

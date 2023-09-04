@@ -1,0 +1,187 @@
+/*
+Colors used
+
+Background color - gray(145,144,144)
+text decoration gets rid of underline links
+*/
+a{text-decoration: none;}
+  body {
+    background-color: #919090;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  h1{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .menubar{
+    float: right;
+    right: 20px;
+  }
+
+  .button-menubar{
+    background-color: #FFFFFF;
+    border: 5px;
+    height: 42px;
+    width: 65px; 
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  .button-resume{
+    background-color: #FFFFFF;
+    padding: 4px;
+    border: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  .button-menubar:hover{
+    background-color: #06760D;
+    opacity: 0.5;
+  }
+  .button-menubar:active{
+    background-color: #0F0569;
+  }
+  .button-menubar:visited{
+    background-color: #97BD0B;
+  }
+  .page-header{
+    display: inline-block;
+    width: 90%;
+    padding: 5px;
+    margin-left: 15px;
+    position: relative;
+    flex-shrink: 1;
+  }
+  .page-logo:last-child{
+    flex-grow: 0 1 200px;
+    text-align: right;
+  }
+  .profile-pic{
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    height: auto;
+    border-radius: 50%;
+  }
+  .page-footer{
+    clear: both;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .center-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+  }
+  
+  .profile{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0;
+  }
+  .grid-projects{
+    display: inline-block;
+    background-color: #299B42;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+  }
+  .grid-projects:last-child{
+    grid-column: 3/3;
+    grid-row: 1/3;
+  }
+  @media all and (max-width: 500px) {
+    .grid{
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+
+  @media all and (min-width:500px) and (max-width:750px){
+    .grid{
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+  }
+  @media all and (max-width:750px){
+    .grid{
+      grid-gap: 10px;
+    }
+    .grid-projects:last-child{
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1{
+      font-size: 22px;
+    }
+  }
+  @keyframes color-change{
+    0%{
+      fill:#edc655;
+    }
+    50%{
+      fill:#fcffad;
+    }
+    100%{
+      fill:#f76414;
+    }
+  }
+  @keyframes cloud-move{
+    from{
+      transform: translate(0px,50px);
+    }
+    to{
+      transform: translate(200px,50px);
+    }
+  }
+  @keyframes cloud-move-reverse{
+    from{
+      transform: translate(446px,48px);
+    }
+    to{
+      transform: translate(100px,48px);
+    }
+  }
+  
+  .sun{
+    animation: 4s color-change infinite alternate linear;
+    /*Another way of doing the sun animation
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    */
+  }
+  .cloud-front{
+    animation: 30s cloud-move infinite alternate linear;
+    /*Another was of having the clouds move
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    */
+  }
+  .cloud-back{
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+  
