@@ -20,6 +20,10 @@ a{text-decoration: none;}
     float: right;
     right: 20px;
   }
+  .page-logo{
+    height: 75px;
+    width: 115px;
+  }
 
   .button-menubar{
     background-color: #FFFFFF;
